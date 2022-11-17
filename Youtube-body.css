@@ -1,0 +1,56 @@
+
+.Thumbnails {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr ;
+    vertical-align: top;
+        }
+.thumbBotDiv{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    vertical-align: top;
+}
+
+.smallCircularImage{
+width: 50px;
+height: 50px;
+border-radius: 50px;
+            }
+
+.channelProfilePic{
+vertical-align: top;
+margin-top: 10px;
+     }
+
+.VideoName{
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.grayText{
+    font-size: 15px;
+    color: gray;
+        }
+
+main{
+            position:relative;   
+        }
+
+.videoGrid{
+   display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: 43% 43%;
+column-gap: 10px;
+row-gap: 0px;
+        position: absolute;
+        left: 300px;
+}
+@media (min-width:1200px) {
+    .videoGrid {
+    }
+}
+
+body{
+    font-style: Roboto;
+}

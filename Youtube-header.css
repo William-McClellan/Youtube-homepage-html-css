@@ -1,0 +1,216 @@
+.header{
+    height: 55px;
+    position:fixed;
+    top:0;
+    right: 0;
+    left: 0;
+    background-color: white;
+    border-bottom: solid 1px lightgray;
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, .02); 
+    z-index: 1;
+}
+
+
+.header, .left-section, .right-section, .middle-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
+.left-section, .right-section{
+    width: 200px;
+}
+
+.left-section{
+display: flex;
+justify-content: start;
+justify-content: space-around;
+
+}
+
+.Icons{
+    /* margin-left: 20px; */
+    height: 25px;
+    width: 25px;
+    object-fit: cover;
+    position: relative;
+    transition: .15s;
+    display: flex; place-content: center; place-items: center;
+
+}
+
+.icons .smallCircularImage {
+    height: 30px;
+    width: 30px;
+    border-radius: 10%;
+    object-fit: cover;
+    border: 10px solid;
+}
+
+.Icons-div{
+display: flex;
+    place-content: center;
+    place-items: center;
+}
+
+.Icons-div:hover .tooltip{
+opacity: 1;
+}
+.tooltip{
+    position:absolute; 
+    bottom: -30%;
+    background-color: gray;
+    color:white;
+    padding: 4px;
+    pointer-events:   none;
+    opacity: 0;
+    font-family: Roboto;
+    border-radius: 2%;
+    white-space: no wrap;
+    z-index: 1;
+    display: flex;
+}
+
+.notification-bell-icon .tooltip{
+    position: absolute;
+    bottom: -130%;
+    
+} 
+
+.notification-bell-icon{
+    position: relative;
+}
+
+.notification-count{
+    background-color: rgb(162, 46, 46);
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    color: white;
+    border-radius:10px;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    position:absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.hamburger-menu{
+height: 20px;
+}
+
+.youtubePic{
+    /* width: 100px; */
+    height: 20px;
+    /* margin-left: 30px; */
+}
+
+.middle-section{
+    display: flex;
+    flex: 1;
+    max-width: 470px;
+    margin-right: 150px;
+}
+.searchBox {
+    width: 0;
+    display: flex;
+    flex: 1;
+    /* padding: 11px 100px; */
+    height: 35px;
+    margin: 20px 0px 20px 0px;
+    border-style: solid;
+    border-color: rgb(215, 215, 215);
+    border-width: 1px;
+    box-shadow: inset 0px 1px 2px #eeeeee; 
+
+}
+
+.searchBox::placeholder{
+padding-left: 10px;
+}
+
+.searchBox::placeholder{
+    font-size: 18px;
+    font-family: roboto;
+    
+}
+
+
+.searchIcon{ 
+    margin-left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    border: solid;
+    border-color: rgb(215, 215, 215); 
+    border-width: 1px;
+    height: 37px ;
+    width: 50px;
+}
+
+.right-section{
+    display: flex;
+    justify-content: end;
+    justify-content: space-around;
+    }
+
+.side-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    height: 1000px;
+    width: 74px;
+    border-top: none;
+    z-index: 1;
+    background-color: white;
+}
+@media (min-width:1200px) {
+    .side-bar{
+        width:150px;
+    }
+}
+
+.side-bar-icon-divs{
+    display: flex;
+    flex-direction: column;
+    display: flex; place-content: center; place-items: center; 
+    height: 72px;
+    width: 72;
+    background-color: white;
+    transition:  .25s;
+    cursor: pointer;
+
+}
+
+.side-bar-icon-divs:hover{
+    background-color: rgb(228, 228, 228);
+    /* border-radius: 10px; */
+    /* box-shadow: 20px 20px 10px rgba(238, 100, 100, 0.55);  */
+}
+
+.side-bar-icon-imgs{
+    height: 24px;
+    width: 24px;
+}
+
+.side-bar-icon-text{
+    color: rgb(113, 113, 113);
+    display: flex; place-content: center; place-items: center;
+    font-size: 10px;
+    font-family: roboto;
+}
+
+.voice-search-icon{
+    margin-left: 20px;
+    background-color: #f9f9f9;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 5px;
+    
+}   
