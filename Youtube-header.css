@@ -10,6 +10,11 @@
     z-index: 1;
 }
 
+.Icons-div,
+.hamburger-menu,
+.youtubePic{
+    cursor: pointer;
+}
 
 .header, .left-section, .right-section, .middle-section {
     display: flex;
